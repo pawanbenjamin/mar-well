@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.link {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
