@@ -1,0 +1,50 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.logo {
+  max-height: 500px;
+  max-width: 80vw;
+  transition: all 1s ease-out;
+}
+
+img.logo:hover {
+  scale: 1.012;
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgb(19, 19, 19, 0.2));
+}
+
+.intro {
+  display: grid;
+  place-content: center;
+  height: auto;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("../assets/hands-on-tummy.jpg");
+}
+
+.intro > p {
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  font-size: 2rem;
+  color: rgb(252, 251, 233);
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  transition: all 1s ease-out;
+}
+
+.intro > p:hover {
+  text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
+}

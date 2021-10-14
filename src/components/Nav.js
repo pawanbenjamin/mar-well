@@ -27,12 +27,24 @@ function Nav(props) {
 
   return (
     <nav className="nav">
-      <Link className="link">Home</Link>
-      <Link className="link">About</Link>
-      <Link className="link">Treatments</Link>
-      <Link className="link">Services</Link>
-      <Link className="link">Faq</Link>
-      <Link className="link">Contact</Link>
+      <Link to="/" className="link">
+        Home
+      </Link>
+      <Link to="/" className="link">
+        About
+      </Link>
+      <Link to="/" className="link">
+        Treatments
+      </Link>
+      <Link to="/" className="link">
+        Services
+      </Link>
+      <Link to="/" className="link">
+        Faq
+      </Link>
+      <Link to="/" className="link">
+        Contact
+      </Link>
     </nav>
   );
 }

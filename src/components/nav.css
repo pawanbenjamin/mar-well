@@ -3,6 +3,7 @@ a {
 }
 
 .nav {
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -12,4 +13,10 @@ a {
 .link {
   margin: 1rem;
   font-size: 1.25rem;
+  transition: all 0.2s ease-out;
+}
+
+.link:hover {
+  scale: 1.0025;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgb(134, 125, 125);
 }
