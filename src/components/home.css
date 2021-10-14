@@ -57,7 +57,7 @@ img.logo:hover {
   margin-bottom: 10%;
 }
 
-button {
+.button-container button {
   font-size: 1.6rem;
   margin: 2rem;
   font-family: "Lora", serif;
@@ -65,7 +65,14 @@ button {
   background: none;
   border: none;
   color: white;
-  box-shadow: 0 6px #dab94e;
+  box-shadow: 0 6px #e9dcaf;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  transition: all 0.2s ease-out;
+}
+
+.button-container button:hover {
+  scale: 1.02;
+  box-shadow: 0 6px #e9a238;
 }
 
 @media screen and (max-width: 740px) {

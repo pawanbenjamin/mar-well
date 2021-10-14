@@ -10,6 +10,12 @@ a {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 1500px) {
+  .nav {
+    justify-content: center;
+  }
+}
+
 .link {
   margin: 1rem;
   font-size: 1.25rem;
