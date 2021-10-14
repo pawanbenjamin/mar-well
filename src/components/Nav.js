@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
-import logo from "../assets/aqua-logo.svg";
+import logo from "../assets/menu.png";
 
 import "./nav.css";
 
