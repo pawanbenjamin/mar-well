@@ -23,6 +23,7 @@ img.logo:hover {
 }
 
 .intro {
+  box-shadow: 0 -0.5rem 1rem rgba(40, 39, 39, 0.2);
   height: auto;
   width: 100vw;
   background-size: cover;

@@ -80,6 +80,9 @@ function About(props) {
         </div>
       </div>
       <div className="about-device">
+        <h1 className="about-device-header">
+          About Marisa <span>(She/ella)</span>
+        </h1>
         <img src={mariAndKaruna} />
         <p>
           My whole life, I have known that my path in this lifetime is to
