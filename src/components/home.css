@@ -15,16 +15,14 @@ img.logo {
   max-height: 500px;
   max-width: 80vw;
   transition: all 1s ease-out;
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgb(19, 19, 19, 0.2));
 }
 
 img.logo:hover {
   scale: 1.012;
-  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgb(19, 19, 19, 0.2));
 }
 
 .intro {
-  display: grid;
-  place-content: center;
   height: auto;
   width: 100vw;
   background-size: cover;
@@ -38,13 +36,49 @@ img.logo:hover {
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 4%;
+  font-family: "Lora", serif;
   font-size: 2rem;
-  color: rgb(252, 251, 233);
+  font-weight: 300;
+  color: rgb(252, 252, 250);
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   transition: all 1s ease-out;
 }
 
 .intro > p:hover {
-  text-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
+  text-shadow: 0.7rem 0.7rem 0.7rem rgb(0, 0, 0);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 10%;
+}
+
+button {
+  font-size: 1.6rem;
+  margin: 2rem;
+  font-family: "Lora", serif;
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  box-shadow: 0 6px #dab94e;
+}
+
+@media screen and (max-width: 740px) {
+  .intro > p {
+    font-size: 1.5rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container button {
+    width: 40%;
+  }
 }

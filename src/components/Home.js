@@ -12,13 +12,18 @@ function Home(props) {
       </div>
       <div className="intro">
         <p>
-          At Mariposa Wellness I combine a variety of manual medicine modalities
-          to treat the whole person. With an expertise in Pelvic Health and
-          almost 20 years experience as a physical therapist my goal is to
-          provide treatment to enhance your overall movement and function while
-          empowering you with knowledge regarding your body and particular
-          condition and techniques for self care.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Mariposa Wellness I combine a variety
+          of manual medicine modalities to treat the whole person. With an
+          expertise in Pelvic Health and almost 20 years experience as a
+          physical therapist my goal is to provide treatment to enhance your
+          overall movement and function while empowering you with knowledge
+          regarding your body and particular condition and techniques for self
+          care.
         </p>
+        <div className="button-container">
+          <button>New Patient?</button>
+          <button>Book Appointment</button>
+        </div>
       </div>
     </div>
   );

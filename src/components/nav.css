@@ -17,6 +17,6 @@ a {
 }
 
 .link:hover {
-  scale: 1.0025;
-  text-shadow: 0.25rem 0.25rem 0.25rem rgb(134, 125, 125);
+  scale: 1.03;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgb(19, 19, 19, 0.2);
 }
