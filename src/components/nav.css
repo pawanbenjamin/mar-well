@@ -10,12 +10,6 @@ a {
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 1500px) {
-  .nav {
-    justify-content: center;
-  }
-}
-
 .link {
   margin: 1rem;
   font-size: 1.25rem;
@@ -25,4 +19,33 @@ a {
 .link:hover {
   scale: 1.03;
   text-shadow: 0.25rem 0.25rem 0.25rem rgb(19, 19, 19, 0.2);
+}
+
+.drop-down {
+  display: none;
+}
+
+/* centers links on large screen */
+@media screen and (min-width: 1500px) {
+  .nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+
+  .drop-down {
+    display: flex;
+    height: 4rem;
+    margin-right: 1rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(19, 19, 19, 0.2));
+    transition: all 1s ease-out;
+  }
+
+  .drop-down:hover {
+    display: none;
+  }
 }

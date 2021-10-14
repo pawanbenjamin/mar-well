@@ -1,6 +1,29 @@
 .footer {
   height: 5rem;
+}
+
+.links {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-style: normal;
+  text-shadow: none;
+  display: none;
+  color: purple;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .copyright {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
