@@ -1,0 +1,56 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about p {
+}
+
+.about {
+  font-size: 1.3rem;
+  font-family: "Lora", serif;
+  font-weight: bolder;
+}
+
+.col1 > * {
+  margin: 1rem;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+
+.col2 > * {
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.about img {
+  width: 50vw;
+}
+
+.about-header {
+  margin-left: 0;
+}
+
+.about-device {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
+  .about-device {
+    display: flex;
+    flex-direction: column;
+  }
+}

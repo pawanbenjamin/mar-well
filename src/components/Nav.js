@@ -30,7 +30,7 @@ function Nav(props) {
       <Link to="/" className="link">
         Home
       </Link>
-      <Link to="/" className="link">
+      <Link to="/about" className="link">
         About
       </Link>
       <Link to="/" className="link">
