@@ -13,9 +13,9 @@ import "./services.css";
 function Services(props) {
   return (
     <div className="services">
-      {/* <img className="services-header" src={lineAqua} /> */}
+      <img className="services-header" src={lineAqua} />
       <section className="service">
-        <h1 className="services-header"> Services</h1>
+        <h1> Services</h1>
         <img src={lookinBaby} />
         <h1>Prenatal Postpartum</h1>
         <p className="fem">

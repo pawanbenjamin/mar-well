@@ -4,11 +4,15 @@ import four from "../assets/treatments/four.jpg";
 import pelv from "../assets/treatments/pelv.jpg";
 import storm2 from "../assets/treatments/stom2.jpg";
 
+import lineAqua from "../assets/aqua-negative.svg";
+
 import "./treatments.css";
 
 function Treatments(props) {
   return (
     <div className="treatments">
+      <img className="services-header" src={lineAqua} />
+
       <section className="treat-section">
         <h1>Core Synchronism</h1>
         <p>

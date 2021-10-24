@@ -1,6 +1,7 @@
 .treatments {
   display: flex;
   flex-direction: column;
+  margin-bottom: ;
 }
 
 .treat-section {
@@ -8,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .treat-section img {

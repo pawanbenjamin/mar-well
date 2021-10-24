@@ -12,6 +12,10 @@ a {
   background-color: transparent;
 }
 
+.popup {
+  position: fixed;
+}
+
 .link {
   margin: 1rem;
   font-size: 1.25rem;

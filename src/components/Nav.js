@@ -52,15 +52,15 @@ function Nav(props) {
           Services
         </Link>
         <Menu
+          className="popup"
           id="simple-menu-1"
           anchorEl={anchorEl}
           open={openMenu}
           onClose={handleClose}
-          MenuListProps={{ onMouseLeave: handleCloseServ }}
+          MenuListProps={{ onMouseLeave: handleCloseServ, padding: 0 }}
           elevation={0}
-          style={{ zIndex: 1302, position: "absolute" }}
+          style={{ zIndex: 1302 }}
         >
-          {/* <MenuItem className="menu-item">Services</MenuItem> */}
           <MenuItem
             component={Link}
             to="/services"
@@ -135,6 +135,9 @@ function Nav(props) {
       </div>
       <img
         src={logo}
+        style={{
+          scale: ".7",
+        }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}

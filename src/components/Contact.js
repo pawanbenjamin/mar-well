@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 
 import { init } from "emailjs-com";
 
-import aquaLogo from "../assets/lineAqua.svg";
+import lineAqua from "../assets/aqua-negative.svg";
 
 import "./contact.css";
 
@@ -36,6 +36,7 @@ function Contact(props) {
 
   return (
     <section className="contact">
+      <img className="services-header" src={lineAqua} />
       <form className="form-cont" onSubmit={sendEmail}>
         <h2>Interested in becoming a new Patient?</h2>
         <h3>

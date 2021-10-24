@@ -2,11 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  background-image: url("../assets/aqua-negative.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 90% 60%;
-
   background-size: 50vmax;
   height: 120vh;
   padding-top: 10%;

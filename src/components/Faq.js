@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 import "./faq.css";
 
-import logo from "../assets/aqua-logo.svg";
+import lineAqua from "../assets/aqua-negative.svg";
 
 function Faq(props) {
+  const ref = useRef();
+
   return (
     <div className="FAQ">
+      <img className="services-header" src={lineAqua} />
       <div className="topic">
         <h1>Insurance</h1>
 
