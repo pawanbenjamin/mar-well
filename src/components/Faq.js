@@ -23,15 +23,25 @@ function Faq(props) {
       </div>
       <div className="topic">
         <h1>Fees</h1>
+        <ul className="fact-list">
+          <li>
+            <h4>Initial Evaluation: $230</h4>
+          </li>
+          <li>
+            <h4>60 min follow-up appointment: $195</h4>
+          </li>
+        </ul>
+        <h4> Accessibility Rates </h4>
         <p>
-          Initial Evaluation: $230 60 min follow-up appointment: $195
-          Accessibility Rates - At Mariposa Wellness we understand the
-          exceptional cost of medical care especially for folks looking to find
-          solutions for health and healing outside of the traditional medical
-          model. Because of this we keep 15% of our schedule available for folks
-          needing treatment but unable to pay the full cost. If you are
-          interested this option please <Link to="/contact">Contact Us!</Link>
+          At Mariposa Wellness we understand the exceptional cost of medical
+          care especially for folks looking to find solutions for health and
+          healing outside of the traditional medical model. Because of this we
+          keep 15% of our schedule available for folks needing treatment but
+          unable to pay the full cost. If you are interested this option please,{" "}
         </p>
+        <Link className="contact-link" to="/contact">
+          Contact Us!
+        </Link>
       </div>
       <div className="topic">
         <h1>Cancellation Policy</h1>
@@ -44,10 +54,10 @@ function Faq(props) {
       <div className="topic">
         <h1>Medicare</h1>
         <p>
-          Medicare - Mariposa Wellness is not a participating provider with
-          medicare. If you are a medicare recipient and interested in receiving
-          our services, we can see you as a “wellness” client. This means you
-          will not be issued a superbill for submitting to insurance.{" "}
+          Mariposa Wellness is not a participating provider with medicare. If
+          you are a medicare recipient and interested in receiving our services,
+          we can see you as a “wellness” client. This means you will not be
+          issued a superbill for submitting to insurance.{" "}
         </p>
       </div>
     </div>

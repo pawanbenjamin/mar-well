@@ -11,6 +11,8 @@
 }
 
 .treat-section img {
+  box-shadow: 0 -0.2rem 0.4rem 0.2rem rgba(40, 39, 39, 0.2);
+
   width: 60%;
 }
 

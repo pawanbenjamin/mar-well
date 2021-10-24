@@ -14,12 +14,12 @@ import "./about.css";
 function About(props) {
   return (
     <>
+      <img className="about-butterfly" src={aquaNeg} />
       <div className="about-device">
-        {/* <img className="about-butterfly" src={aquaNeg} /> */}
+        <h1 className="about-device-header">Marisa (She/ella)</h1>
         <div>
           <img src={mariAndKaruna} />
         </div>
-        <h1 className="about-device-header">About Marisa (She/ella)</h1>
         <p>
           My whole life, I have known that my path in this lifetime is to
           support others thrive in their journey toward healing and wholeness.

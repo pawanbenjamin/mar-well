@@ -13,3 +13,13 @@
 .service img {
   width: 100%;
 }
+
+.services-header {
+  text-align: center;
+  font-weight: lighter;
+  font-stretch: narrower;
+  font-size: 3rem;
+  letter-spacing: -1px;
+
+  width: 30%;
+}

@@ -6,12 +6,17 @@ import laugh from "../assets/services/laugh.jpg";
 import seven from "../assets/services/seven.jpg";
 import eight from "../assets/services/eight.jpg";
 
+import lineAqua from "../assets/aqua-negative.svg";
+
 import "./services.css";
 
 function Services(props) {
   return (
     <div className="services">
+      {/* <img className="services-header" src={lineAqua} /> */}
       <section className="service">
+        <h1 className="services-header"> Services</h1>
+        <img src={lookinBaby} />
         <h1>Prenatal Postpartum</h1>
         <p className="fem">
           During pregnancy and in the postpartum phase, changes in hormones, the
@@ -22,7 +27,7 @@ function Services(props) {
           allow for greater ease with labor and delivery, and help accelerate
           the new parent’s recovery after childbirth.
         </p>
-        <img src={lookinBaby} />
+
         <div className="common-cond">
           <h2>Common conditions treated:</h2>
           <ul>

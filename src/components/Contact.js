@@ -36,15 +36,12 @@ function Contact(props) {
 
   return (
     <section className="contact">
-      <h1 className="header">Contact</h1>
-      <h2>
-        Interested in becoming a new Patient?
-        <br />
-        Please fill out the form below <br />
-        and we will get back to you as soon as possible
-      </h2>
-
       <form className="form-cont" onSubmit={sendEmail}>
+        <h2>Interested in becoming a new Patient?</h2>
+        <h3>
+          Please fill out the form below <br />
+          and we will get back to you as soon as possible
+        </h3>
         <TextField name="name" type="text" placeholder="Name" />
         <TextField name="email" type="text" placeholder="Email" />
         <TextField name="subject" type="text" placeholder="Subject" />

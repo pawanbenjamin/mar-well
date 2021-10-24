@@ -7,7 +7,9 @@
   background-size: 50vmax;
   height: 120vh;
   padding-top: 10%;
-  margin-left: 8%;
+  padding-left: 8%;
+
+  text-align: center;
 }
 
 .form-cont {
@@ -32,4 +34,16 @@
   letter-spacing: 1px;
   font-weight: 700;
   outline: none;
+}
+
+@media screen and (max-width: 375px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0%;
+  }
+  .form-cont {
+    width: 76vmin;
+  }
 }

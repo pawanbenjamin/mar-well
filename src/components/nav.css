@@ -3,6 +3,7 @@ a {
 }
 
 .nav {
+  position: relative;
   margin-top: 3rem;
   display: flex;
   flex-direction: row;

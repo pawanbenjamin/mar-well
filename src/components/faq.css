@@ -10,10 +10,36 @@
   background-size: 50vmax;
   height: 120vh;
   padding-top: 10%;
-  margin-left: 8%;
+  padding-left: 8%;
+  margin-bottom: 15%;
 }
 
 .topic {
   margin-top: 2rem;
-  width: 70%;
+  width: 50vmin;
+}
+
+.FAQ p {
+  font-size: 1.2rem;
+}
+
+.fact-list {
+  padding-top: 0.5rem;
+  padding-left: 8%;
+  padding-bottom: 0.5rem;
+}
+
+.contact-link {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .FAQ {
+    height: 300vh;
+  }
+  .topic {
+    width: 92%;
+  }
 }

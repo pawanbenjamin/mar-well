@@ -58,7 +58,7 @@ function Nav(props) {
           onClose={handleClose}
           MenuListProps={{ onMouseLeave: handleCloseServ }}
           elevation={0}
-          style={{ zIndex: 1302 }}
+          style={{ zIndex: 1302, position: "absolute" }}
         >
           {/* <MenuItem className="menu-item">Services</MenuItem> */}
           <MenuItem
