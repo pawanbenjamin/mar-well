@@ -1,13 +1,13 @@
 .about-device {
-  margin-top: 4rem;
+  padding-top: 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 3rem;
+  align-items: left;
+
+  padding-left: 10%;
+  padding-bottom: 3rem;
   z-index: 4;
 }
 
@@ -40,7 +40,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 70vmin;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: rgb(12, 12, 11);
   /* text-shadow: 2px 2px 2px rgb(230, 228, 243); */
   /* transition: all 0.7s ease-out; */

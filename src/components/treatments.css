@@ -4,13 +4,14 @@
 }
 
 .treat-section {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .treat-section img {
-  width: 60vmax;
+  width: 60%;
 }
 
 .treat-section a {
@@ -18,5 +19,11 @@
 }
 
 .treat-section p {
-  width: 60vmax;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .treat-section {
+    width: 95%;
+  }
 }

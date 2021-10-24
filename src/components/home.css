@@ -59,22 +59,26 @@ img.logo:hover {
 }
 
 .button-container button {
-  font-size: 1.6rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
   margin: 2rem;
   font-family: "Lora", serif;
-  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   background: none;
   border: none;
   color: white;
-  box-shadow: 0 6px #e9dcaf;
+  box-shadow: 2px #e9dcaf;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
-  transition: all 0.2s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .button-container button:hover {
-  scale: 1.02;
-  box-shadow: 0 6px #e9a238;
-  color: #e9a238;
+  scale: 1.2;
+  box-shadow: 6px #e7b365;
+  color: #eec17d;
   text-shadow: 6px 6px 6px black;
 }
 

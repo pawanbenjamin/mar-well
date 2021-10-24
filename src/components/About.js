@@ -16,7 +16,7 @@ function About(props) {
     <>
       <div className="about-device">
         {/* <img className="about-butterfly" src={aquaNeg} /> */}
-        <div className="mkframe">
+        <div>
           <img src={mariAndKaruna} />
         </div>
         <h1 className="about-device-header">About Marisa (She/ella)</h1>
@@ -35,7 +35,7 @@ function About(props) {
           and never needed surgery! This was the start of my curiosity, deep
           awe, and respect for the bodys innate ability to heal.
         </p>
-        <div className="danceFrame">
+        <div>
           <img src={rickyMari} />
         </div>
 
@@ -53,7 +53,7 @@ function About(props) {
           importance of healthcare practitioners recognizing the racial and
           ethic differences when developing treatment plans.
         </p>
-        <div className="trio-frame">
+        <div>
           <img src={mariFam} />
         </div>
 
