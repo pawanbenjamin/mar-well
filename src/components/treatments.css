@@ -1,0 +1,22 @@
+.treatments {
+  display: flex;
+  flex-direction: column;
+}
+
+.treat-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treat-section img {
+  width: 60vmax;
+}
+
+.treat-section a {
+  display: inline;
+}
+
+.treat-section p {
+  width: 60vmax;
+}

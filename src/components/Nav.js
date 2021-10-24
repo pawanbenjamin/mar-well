@@ -39,7 +39,7 @@ function Nav(props) {
         <Link to="/about" className="link">
           About
         </Link>
-        <Link to="/" className="link">
+        <Link to="/treatments" className="link">
           Treatments
         </Link>
         <Link
@@ -60,52 +60,76 @@ function Nav(props) {
           elevation={0}
           style={{ zIndex: 1302 }}
         >
-          <MenuItem className="menu-item">Services</MenuItem>
-          <a
-            className="anchor"
-            onClick="return false;"
-            href="/services#pre-post"
+          {/* <MenuItem className="menu-item">Services</MenuItem> */}
+          <MenuItem
+            component={Link}
+            to="/services"
+            className="menu-item"
+            onClick={handleClose}
           >
-            <MenuItem className="menu-item" onClick={handleClose}>
-              Prenatal / Postpartum
-            </MenuItem>
-          </a>
-
-          <a className="anchor" onClick="return false;" href="/services#gender">
-            <MenuItem className="menu-item" onClick={handleClose}>
-              Gender Inclusive Pelvic Health
-            </MenuItem>
-          </a>
-          <a className="anchor" onClick="return false;" href="/services#female">
-            <MenuItem className="menu-item" onClick={handleClose}>
-              Female Pelvic Health
-            </MenuItem>
-          </a>
-          <a className="anchor" onClick="return false;" href="/services#male">
-            <MenuItem className="menu-item" onClick={handleClose}>
-              Male Pelvic Health
-            </MenuItem>
-          </a>
-          <a className="anchor" onClick="return false;" href="/services#chron">
-            <MenuItem className="menu-item" onClick={handleClose}>
-              Chronic Pain
-            </MenuItem>
-          </a>
-          <a className="anchor" onClick="return false;" href="/services#ed">
-            <MenuItem
-              className="menu-item"
-              component={Link}
-              to="/services#ed"
-              onClick={handleClose}
+            Services
+          </MenuItem>
+          <MenuItem className="menu-item" onClick={handleClose}>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#pre-post"
             >
+              Prenatal / Postpartum
+            </a>
+          </MenuItem>
+
+          <MenuItem className="menu-item" onClick={handleClose}>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#gender"
+            >
+              Gender Inclusive Pelvic Health
+            </a>
+          </MenuItem>
+
+          <MenuItem className="menu-item" onClick={handleClose}>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#female"
+            >
+              Female Pelvic Health
+            </a>
+          </MenuItem>
+
+          <MenuItem className="menu-item" onClick={handleClose}>
+            <a className="anchor" onClick="return false;" href="/services#male">
+              Male Pelvic Health
+            </a>
+          </MenuItem>
+
+          <MenuItem className="menu-item" onClick={handleClose}>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#chron"
+            >
+              Chronic Pain
+            </a>
+          </MenuItem>
+
+          <MenuItem
+            className="menu-item"
+            component={Link}
+            to="/services#ed"
+            onClick={handleClose}
+          >
+            <a className="anchor" onClick="return false;" href="/services#ed">
               Community Education
-            </MenuItem>
-          </a>
+            </a>
+          </MenuItem>
         </Menu>
-        <Link to="/" className="link">
+        <Link to="/faq" className="link">
           Faq
         </Link>
-        <Link to="/" className="link">
+        <Link to="/contact" className="link">
           Contact
         </Link>
       </div>

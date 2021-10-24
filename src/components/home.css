@@ -35,11 +35,11 @@ img.logo:hover {
 .intro > p {
   text-align: left;
   margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 12%;
+  margin-right: 12%;
   margin-bottom: 4%;
   font-family: "Lora", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: rgb(252, 252, 250);
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
@@ -62,7 +62,7 @@ img.logo:hover {
   font-size: 1.6rem;
   margin: 2rem;
   font-family: "Lora", serif;
-  padding: 1rem;
+  padding: 0.5rem;
   background: none;
   border: none;
   color: white;
@@ -74,11 +74,15 @@ img.logo:hover {
 .button-container button:hover {
   scale: 1.02;
   box-shadow: 0 6px #e9a238;
+  color: #e9a238;
+  text-shadow: 6px 6px 6px black;
 }
 
 @media screen and (max-width: 740px) {
   .intro > p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .button-container {
@@ -87,6 +91,7 @@ img.logo:hover {
   }
 
   .button-container button {
+    font-size: 1.2rem;
     width: 50%;
   }
 }

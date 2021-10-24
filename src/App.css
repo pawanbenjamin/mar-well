@@ -1,0 +1,6 @@
+.app {
+}
+
+.app > img {
+  position: fixed;
+}

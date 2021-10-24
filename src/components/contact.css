@@ -1,0 +1,43 @@
+.contact {
+  background-image: url("../assets/aqua-negative.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 90% 60%;
+  background-size: cover;
+  background-size: 50vmax;
+  height: 70vh;
+
+  margin-top: 4rem;
+  margin-left: 6rem;
+}
+
+.header {
+  margin-top: 2rem;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.book2 {
+  font-size: 1.6rem;
+  transition: all 0.2s ease-out;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  background: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+}

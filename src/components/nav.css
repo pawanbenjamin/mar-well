@@ -8,6 +8,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 1rem;
+  background-color: transparent;
 }
 
 .link {
@@ -46,6 +47,6 @@ a {
   }
 
   .drop-down:hover {
-    display: none;
+    /* display: none; */
   }
 }
