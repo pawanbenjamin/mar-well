@@ -60,15 +60,15 @@ img.logo:hover {
 .button-container button {
   border-radius: 2rem;
   font-size: 1.3rem;
-  margin: 2rem;
-
+  margin: 0.8rem;
+  font-family: "Zen Old Mincho", serif;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   background: none;
   border: none;
-  color: white;
+  color: rgb(252, 252, 250);
   box-shadow: 2px #e9dcaf;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   transition: all 0.4s ease-out;
@@ -91,10 +91,12 @@ img.logo:hover {
   .button-container {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20%;
   }
 
   .button-container button {
     font-size: 1.2rem;
     width: 50%;
+    margin: 0.2rem;
   }
 }
