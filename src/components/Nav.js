@@ -10,24 +10,14 @@ import "./nav.css";
 
 function Nav(props) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [openMenu, setOpenMenu] = useState(false);
-
+  const open = Boolean(anchorEl);
   const handleClick = (event) => {
+    console.log(event.currentTarget);
     setAnchorEl(event.currentTarget);
+    console.log(anchorEl);
   };
-
-  const handleClickServ = (e) => {
-    setAnchorEl(e.currentTarget);
-    setOpenMenu(true);
-  };
-
   const handleClose = () => {
     setAnchorEl(null);
-  };
-
-  const handleCloseServ = (e) => {
-    setAnchorEl(null);
-    setOpenMenu(false);
   };
 
   return (
@@ -42,164 +32,41 @@ function Nav(props) {
         <Link to="/treatments" className="link">
           Treatments
         </Link>
-        <Link
+        <a
+          className="link"
+          id="serv-link"
+          aria-controls="simple-menu"
           to="/services"
           className="link"
-          aria-owns={anchorEl ? "simple-menu-1" : undefined}
-          aria-haspopup={anchorEl ? "true" : undefined}
-          onMouseOver={(e) => handleClickServ(e)}
+          onClick={handleClick}
         >
           Services
-        </Link>
-        <Menu
-          className="popup"
-          id="simple-menu-1"
-          anchorEl={anchorEl}
-          open={openMenu}
-          onClose={handleClose}
-          MenuListProps={{ onMouseLeave: handleCloseServ, padding: 0 }}
-          elevation={0}
-          style={{ zIndex: 1302 }}
-        >
-          <MenuItem
-            component={Link}
-            to="/services"
-            className="menu-item"
-            onClick={handleClose}
-          >
-            Services
-          </MenuItem>
-          <MenuItem className="menu-item" onClick={handleClose}>
-            <a
-              className="anchor"
-              onClick="return false;"
-              href="/services#pre-post"
-            >
-              Prenatal / Postpartum
-            </a>
-          </MenuItem>
-
-          <MenuItem className="menu-item" onClick={handleClose}>
-            <a
-              className="anchor"
-              onClick="return false;"
-              href="/services#gender"
-            >
-              Gender Inclusive Pelvic Health
-            </a>
-          </MenuItem>
-
-          <MenuItem className="menu-item" onClick={handleClose}>
-            <a
-              className="anchor"
-              onClick="return false;"
-              href="/services#female"
-            >
-              Female Pelvic Health
-            </a>
-          </MenuItem>
-
-          <MenuItem className="menu-item" onClick={handleClose}>
-            <a className="anchor" onClick="return false;" href="/services#male">
-              Male Pelvic Health
-            </a>
-          </MenuItem>
-
-          <MenuItem className="menu-item" onClick={handleClose}>
-            <a
-              className="anchor"
-              onClick="return false;"
-              href="/services#chron"
-            >
-              Chronic Pain
-            </a>
-          </MenuItem>
-
-          <MenuItem
-            className="menu-item"
-            component={Link}
-            to="/services#ed"
-            onClick={handleClose}
-          >
-            <a className="anchor" onClick="return false;" href="/services#ed">
-              Community Education
-            </a>
-          </MenuItem>
-        </Menu>
+        </a>
         <Link to="/faq" className="link">
           Faq
         </Link>
         <Link to="/contact" className="link">
           Contact
         </Link>
+        <Menu
+          disableScrollLock={true}
+          id="simple-menu"
+          open={open}
+          anchorEl={anchorEl}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "serv-link",
+            onMouseLeave: handleClose,
+          }}
+          PaperProps={{
+            style: {
+              transform: "translateX(-10%) translateY(100%)",
+            },
+          }}
+        >
+          <MenuItem onClick={handleClose}>Prenatal / Postpartum</MenuItem>
+        </Menu>
       </div>
-      <img
-        src={logo}
-        style={{
-          scale: ".7",
-        }}
-        aria-controls="simple-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        className="drop-down"
-      />
-
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem
-          component={Link}
-          to="/"
-          style={{ color: "#4A1C3E" }}
-          onClick={handleClose}
-        >
-          Home
-        </MenuItem>
-        <MenuItem
-          style={{ color: "#4A1C3E" }}
-          component={Link}
-          to="/about"
-          onClick={handleClose}
-        >
-          About
-        </MenuItem>
-        <MenuItem
-          style={{ color: "#4A1C3E" }}
-          component={Link}
-          to="/treatments"
-          onClick={handleClose}
-        >
-          Treatments
-        </MenuItem>
-        <MenuItem
-          style={{ color: "#4A1C3E" }}
-          component={Link}
-          to="/services"
-          onClick={handleClose}
-        >
-          Services
-        </MenuItem>
-        <MenuItem
-          style={{ color: "#4A1C3E" }}
-          component={Link}
-          to="/FAQ"
-          onClick={handleClose}
-        >
-          FAQ
-        </MenuItem>
-        <MenuItem
-          style={{ color: "#4A1C3E" }}
-          component={Link}
-          to="/contact"
-          onClick={handleClose}
-        >
-          Contact
-        </MenuItem>
-      </Menu>
     </nav>
   );
 }

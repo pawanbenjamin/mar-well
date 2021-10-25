@@ -1,7 +1,6 @@
 .treatments {
   display: flex;
   flex-direction: column;
-  margin-bottom: ;
 }
 
 .treat-section {
@@ -27,7 +26,13 @@
 }
 
 @media screen and (max-width: 600px) {
-  .treat-section {
-    width: 95%;
+  .treatments {
+    width: 95vw;
+  }
+  .treat-section img {
+    width: 84%;
+  }
+  .treat-section p {
+    width: 80%;
   }
 }

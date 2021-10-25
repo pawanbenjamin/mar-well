@@ -14,7 +14,7 @@ import "./about.css";
 function About(props) {
   return (
     <>
-      <img className="about-butterfly" src={aquaNeg} />
+      <img className="services-header" src={aquaNeg} />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
         <div>

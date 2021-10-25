@@ -17,6 +17,7 @@ a {
 }
 
 .link {
+  color: purple;
   margin: 1rem;
   font-size: 1.25rem;
   transition: all 0.2s ease-out;
