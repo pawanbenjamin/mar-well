@@ -12,10 +12,6 @@ a {
   background-color: transparent;
 }
 
-.popup {
-  position: fixed;
-}
-
 .link {
   color: purple;
   margin: 1rem;
@@ -46,13 +42,9 @@ a {
 
   .drop-down {
     display: flex;
-    height: 3rem;
+    height: 2rem;
     margin-right: 1rem;
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(19, 19, 19, 0.2));
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(19, 17, 17, 0.2));
     transition: all 1s ease-out;
-  }
-
-  .drop-down:hover {
-    /* display: none; */
   }
 }

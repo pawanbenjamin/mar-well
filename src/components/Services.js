@@ -44,7 +44,7 @@ function Services(props) {
           </ul>
         </div>
       </section>
-      <section className="service">
+      <section className="service" id="gender">
         <h1>Gender Inclusive Pelvic Health</h1>
         <p className="fem">
           At Mariposa wellness we are dedicated to inclusive rehabilitation for
@@ -70,7 +70,7 @@ function Services(props) {
           </ul>
         </div>
       </section>
-      <section className="service">
+      <section className="service" id="female">
         <h1>Female Pelvic Health</h1>
         <p className="fem">
           At Mariposa Wellness we specialize in the treatment of the following
@@ -108,7 +108,7 @@ function Services(props) {
           </ul>
         </div>
       </section>
-      <section className="service">
+      <section className="service" id="male">
         <h1>Male Pelvic Health</h1>
         <p className="fem">
           Our specialized Pelvic Floor Physical Therapists also treat conditions
@@ -145,7 +145,7 @@ function Services(props) {
           </ul>
         </div>
       </section>
-      <section className="service">
+      <section className="service" id="chronic">
         <h1>Chronic Pain</h1>
         <p className="fem">
           Chronic pain, like neck or back pain, can be caused by poor posture,
@@ -180,7 +180,7 @@ function Services(props) {
           </ul>
         </div>
       </section>
-      <section className="service">
+      <section className="service" id="comm">
         <h1>
           Community <br />
           Education Classes
