@@ -3,15 +3,15 @@
   flex-direction: column;
 
   background-size: 50vmax;
-  height: 120vh;
+
   padding-top: 10%;
-  padding-left: 8%;
+  padding-left: 18%;
   margin-bottom: 15%;
 }
 
 .topic {
-  margin-top: 2rem;
-  width: 50vmin;
+  width: 90vmin;
+  margin-bottom: 4rem;
 }
 
 .FAQ p {
@@ -36,6 +36,9 @@
   }
   .topic {
     width: 92%;
+  }
+  .FAQ {
+    padding-left: 8%;
   }
 }
 
