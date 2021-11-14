@@ -3,6 +3,7 @@ import React from "react";
 import "./home.css";
 
 import fullLogo from "../assets/full-logo.svg";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
@@ -22,8 +23,12 @@ function Home(props) {
         </p>
       </div>
       <div className="button-container">
-        <button>New Patient?</button>
-        <button className="app-btn">Book Appt</button>
+        <Link to="/contact">
+          <button>New Patient?</button>
+        </Link>
+        <a href="https://bchwbooking.clientsecure.me/">
+          <button className="app-btn">Book Appt</button>
+        </a>
       </div>
     </div>
   );

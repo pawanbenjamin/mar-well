@@ -49,7 +49,9 @@ function Contact(props) {
           Returning Patients <br />
           Follow the Link Below
         </h2>
-        <button className="book-app-btn">Book Appointment</button>
+        <a href="https://bchwbooking.clientsecure.me/">
+          <button className="book-app-btn">Book Appointment</button>
+        </a>
       </div>
       <form ref={form} className="form-cont" onSubmit={sendEmail}>
         <h1>Interested in becoming a New Patient?</h1>
