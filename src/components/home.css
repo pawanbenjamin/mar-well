@@ -78,7 +78,8 @@ img.logo:hover {
 }
 
 .button-container button:hover {
-  box-shadow: 6px #e7b365;
+  scale: 1.02;
+  box-shadow: 6px #3a3631;
   color: #f0d1a2;
   /* text-shadow: 2px 2px 2px rgb(97, 95, 95); */
 }

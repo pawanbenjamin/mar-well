@@ -35,6 +35,11 @@
   outline: none;
 }
 
+.book2:hover {
+  scale: 1.02;
+  text-shadow: 2px 2px 2px rgb(97, 95, 95);
+}
+
 @media screen and (max-width: 810px) {
   .contact {
     display: flex;
@@ -70,6 +75,7 @@
 
 .book-app-btn:hover {
   box-shadow: 6px #e7b365;
+  scale: 1.02;
   color: #f7e4c7;
-  /* text-shadow: 2px 2px 2px rgb(97, 95, 95); */
+  text-shadow: 2px 2px 2px rgb(97, 95, 95);
 }
