@@ -15,6 +15,7 @@ function Treatments(props) {
 
       <section className="treat-section">
         <h1>Core Synchronism</h1>
+
         <p>
           “Core Synchronism is a system of hand medicine designed to assist
           nature in establishing harmony with all parts of the organism. It is

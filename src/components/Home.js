@@ -20,10 +20,10 @@ function Home(props) {
           regarding your body and particular condition and techniques for self
           care.
         </p>
-        <div className="button-container">
-          <button>New Patient?</button>
-          <button>Book Appointment</button>
-        </div>
+      </div>
+      <div className="button-container">
+        <button>New Patient?</button>
+        <button>Book Appointment</button>
       </div>
     </div>
   );

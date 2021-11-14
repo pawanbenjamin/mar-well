@@ -7,9 +7,28 @@ a {
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   margin-right: 1rem;
   background-color: transparent;
+}
+
+.book-btn {
+  border-radius: 2rem;
+  font-size: 1.2rem;
+
+  font-family: "Zen Old Mincho", serif;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  /* box-shadow: 0 0.2rem 0.9rem 0.2rem rgba(40, 39, 39, 0.2); */
+  border: 1px solid;
+  color: rgb(252, 252, 250);
+
+  background-color: rgba(206, 174, 214, 0.918);
+  /* background-image: url("../assets/binding-light.png"); */
+  /* text-shadow: 4px 4px 4px rgb(0, 0, 0); */
+  transition: all 0.6s ease-out;
 }
 
 .link {
@@ -36,6 +55,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .nav {
+    justify-content: flex-end;
+  }
   .links {
     display: none;
   }

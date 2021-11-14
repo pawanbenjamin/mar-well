@@ -44,8 +44,12 @@ function Contact(props) {
   return (
     <section className="contact">
       <img className="services-header" src={lineAqua} />
+      <div className="existing">
+        <h2>Returning Patients:</h2>
+        <button className="book-app-btn">Book Appointment</button>
+      </div>
       <form className="form-cont" onSubmit={sendEmail}>
-        <h2>Interested in becoming a New Patient?</h2>
+        <h1>Interested in becoming a New Patient?</h1>
         <h3>
           Please fill out the form below <br />
           and we will get back to you as soon as possible

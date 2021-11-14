@@ -38,7 +38,6 @@ function About(props) {
         <div>
           <img src={rickyMari} />
         </div>
-
         <p className="bio1">
           As a college student I studied physical therapy at the University of
           Connecticut graduating in 2004. At school I was always passionate
@@ -56,7 +55,6 @@ function About(props) {
         <div>
           <img src={mariFam} />
         </div>
-
         <p>
           Knowing that I wanted to focus my career in pelvic health, I completed
           the course work through the Herman & Wallace Pelvic Rehabilitation

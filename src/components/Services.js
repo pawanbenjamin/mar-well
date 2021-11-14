@@ -15,7 +15,15 @@ function Services(props) {
     <div className="services">
       <img className="services-header" src={lineAqua} />
       <section className="service">
-        <h1> Services</h1>
+        <h1
+          style={{
+            fontSize: "3rem",
+            textAlign: "center",
+          }}
+        >
+          {" "}
+          Services
+        </h1>
         <img src={lookinBaby} />
         <h1>Prenatal Postpartum</h1>
         <p className="fem">

@@ -74,6 +74,8 @@ function Nav(props) {
           PaperProps={{
             style: {
               transform: "translateX(-10%) translateY(20%)",
+              backgroundColor: `rgba(250, 239, 209, 1)`,
+              backgroundImage: `url("../assets/binding-light.png")`,
             },
           }}
         >
@@ -115,6 +117,13 @@ function Nav(props) {
           "aria-labelledby": "serv-link",
           onMouseLeave: handleClose2,
         }}
+        PaperProps={{
+          style: {
+            transform: "translateX(-10%) translateY(20%)",
+            backgroundColor: `rgba(250, 239, 209, 1)`,
+            backgroundImage: `url("../assets/binding-light.png")`,
+          },
+        }}
       >
         <MenuItem onClick={handleClose2}>
           <Link to="/">Home</Link>
@@ -133,6 +142,9 @@ function Nav(props) {
         </MenuItem>
         <MenuItem onClick={handleClose2}>
           <Link to="/contact">Contact</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose2}>
+          <button className="book-btn">Book</button>
         </MenuItem>
       </Menu>
     </nav>

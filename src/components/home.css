@@ -19,7 +19,7 @@ img.logo {
 }
 
 img.logo:hover {
-  scale: 1.012;
+  scale: 1.2;
 }
 
 .intro {
@@ -34,10 +34,10 @@ img.logo:hover {
 
 .intro > p {
   text-align: left;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-left: 12%;
   margin-right: 12%;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
   font-size: 1.5rem;
   font-weight: 300;
   color: rgb(252, 252, 250);
@@ -55,30 +55,32 @@ img.logo:hover {
   justify-content: center;
   width: 100vw;
   margin-bottom: 10%;
+  margin-top: 7%;
 }
 
 .button-container button {
-  border-radius: 2rem;
+  border-radius: 1.3rem;
   font-size: 1.3rem;
-  margin: 0.8rem;
+  margin: 1.6rem;
   font-family: "Zen Old Mincho", serif;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.3rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.2rem;
   padding-bottom: 0.3rem;
-  background: none;
-  border: none;
+  box-shadow: 0 0.1rem 01rem 0.1rem rgba(40, 39, 39, 0.2);
+  border: solid;
   color: rgb(252, 252, 250);
-  box-shadow: 2px #e9dcaf;
-  text-shadow: 4px 4px 4px rgb(0, 0, 0);
-  transition: all 0.4s ease-out;
+
+  background-color: rgba(168, 121, 181, 0.918);
+  background-image: url("../assets/binding-light.png");
+  /* text-shadow: 4px 4px 4px rgb(0, 0, 0); */
+  transition: all 0.5s ease-out;
 }
 
 .button-container button:hover {
-  scale: 1.2;
   box-shadow: 6px #e7b365;
-  color: #eec17d;
-  text-shadow: 6px 6px 6px black;
+  color: #f0d1a2;
+  /* text-shadow: 2px 2px 2px rgb(97, 95, 95); */
 }
 
 @media screen and (max-width: 740px) {
@@ -91,6 +93,7 @@ img.logo:hover {
   .button-container {
     flex-direction: column;
     align-items: center;
+    margin-top: 12%;
     margin-bottom: 20%;
   }
 
