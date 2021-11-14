@@ -9,7 +9,12 @@
 }
 
 .FAQ hr {
-  width: 70%;
+  width: 80vmin;
+  margin-bottom: 4rem;
+}
+
+.head {
+  text-decoration: underline;
   margin-bottom: 4rem;
 }
 
@@ -46,6 +51,11 @@
   }
   .FAQ {
     padding-left: 8%;
+  }
+
+  .FAQ hr {
+    width: 60vmin;
+    margin-bottom: 4rem;
   }
 }
 

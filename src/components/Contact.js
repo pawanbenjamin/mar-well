@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import { useHistory } from "react-router-dom";
 
@@ -17,8 +17,6 @@ init(process.env["USER"]);
 function Contact(props) {
   const form = useRef();
   let history = useHistory();
-
-  useEffect(() => {});
 
   const sendEmail = (e) => {
     e.preventDefault();

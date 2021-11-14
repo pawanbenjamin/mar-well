@@ -23,7 +23,7 @@ function Home(props) {
       </div>
       <div className="button-container">
         <button>New Patient?</button>
-        <button>Book Appointment</button>
+        <button className="app-btn">Book Appt</button>
       </div>
     </div>
   );
