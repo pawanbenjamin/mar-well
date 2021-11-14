@@ -17,6 +17,7 @@ function About(props) {
       <img className="services-header" src={aquaNeg} />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>
+        <hr />
         <div>
           <img src={mariAndKaruna} />
         </div>

@@ -24,6 +24,7 @@ function Services(props) {
           {" "}
           Services
         </h1>
+        <hr />
         <img src={lookinBaby} />
         <h1>Prenatal Postpartum</h1>
         <p className="fem">

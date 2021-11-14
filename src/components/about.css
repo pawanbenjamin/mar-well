@@ -1,10 +1,14 @@
-hr {
-  border: none;
-  border-top: 3px double #333;
-  color: #333;
+.about-device hr {
+  border: black;
+
+  background-color: black;
   overflow: visible;
   text-align: center;
-  height: 5px;
+  height: 2px;
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
 }
 
 .about-device {
