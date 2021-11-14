@@ -12,7 +12,7 @@ function Faq(props) {
     <div className="FAQ">
       <img className="services-header" src={lineAqua} />
       <h1 className="head">Frequently Asked Questions</h1>
-      {/* <hr /> */}
+      <hr />
       <div className="topic">
         <h1>Insurance</h1>
 

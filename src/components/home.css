@@ -33,12 +33,12 @@ img.logo:hover {
 }
 
 .intro > p {
-  text-align: left;
+  text-align: center;
   margin-top: 8%;
   margin-left: 12%;
   margin-right: 12%;
   margin-bottom: 8%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: rgb(252, 252, 250);
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
@@ -79,15 +79,15 @@ img.logo:hover {
 }
 
 .button-container button:hover {
+  box-shadow: 6px #e7b365;
   scale: 1.02;
-  box-shadow: 6px #3a3631;
-  color: #f0d1a2;
-  /* text-shadow: 2px 2px 2px rgb(97, 95, 95); */
+  color: #f7e4c7;
+  text-shadow: 2px 2px 2px rgb(97, 95, 95);
 }
 
 @media screen and (max-width: 740px) {
   .intro > p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-left: 3rem;
     margin-right: 3rem;
   }
