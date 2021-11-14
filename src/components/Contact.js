@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import { useHistory } from "react-router-dom";
 
 import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
 
 import emailjs from "emailjs-com";
 
@@ -16,7 +15,10 @@ import "./contact.css";
 init(process.env["USER"]);
 
 function Contact(props) {
+  const form = useRef();
   let history = useHistory();
+
+  useEffect(() => {});
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,15 +27,15 @@ function Contact(props) {
       .sendForm(
         process.env["REACT_APP_SERVICE"],
         process.env["REACT_APP_TEMPLATE"],
-        e.target,
+        form.current,
         process.env["REACT_APP_USER"]
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
         }
       )
       .finally(() => {
@@ -45,10 +47,13 @@ function Contact(props) {
     <section className="contact">
       <img className="services-header" src={lineAqua} />
       <div className="existing">
-        <h2>Returning Patients:</h2>
+        <h2>
+          Returning Patients <br />
+          Follow the Link Below
+        </h2>
         <button className="book-app-btn">Book Appointment</button>
       </div>
-      <form className="form-cont" onSubmit={sendEmail}>
+      <form ref={form} className="form-cont" onSubmit={sendEmail}>
         <h1>Interested in becoming a New Patient?</h1>
         <h3>
           Please fill out the form below <br />
