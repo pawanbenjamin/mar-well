@@ -59,7 +59,7 @@ function Nav(props) {
           Faq
         </Link>
         <Link to="/contact" className="link">
-          Contact
+          Book
         </Link>
         <Menu
           disableScrollLock={true}
@@ -140,11 +140,13 @@ function Nav(props) {
         <MenuItem onClick={handleClose2}>
           <Link to="/faq">FAQ</Link>
         </MenuItem>
-        <MenuItem onClick={handleClose2}>
+        {/* <MenuItem onClick={handleClose2}>
           <Link to="/contact">Contact</Link>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem onClick={handleClose2}>
-          <button className="book-btn">Book</button>
+          <Link to="/contact">
+            <button className="book-btn">Book</button>
+          </Link>
         </MenuItem>
       </Menu>
     </nav>

@@ -100,8 +100,9 @@ img.logo:hover {
   }
 
   .button-container button {
+    white-space: nowrap;
     font-size: 1.2rem;
-    width: 50%;
+    width: 90%;
     margin: 0.4rem;
   }
 

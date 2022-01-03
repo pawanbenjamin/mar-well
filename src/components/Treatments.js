@@ -4,16 +4,21 @@ import four from "../assets/treatments/four.jpg";
 import pelv from "../assets/treatments/pelv.jpg";
 import storm2 from "../assets/treatments/stom2.jpg";
 
-import lineAqua from "../assets/aqua-negative.svg";
-
 import "./treatments.css";
 
 function Treatments(props) {
   return (
     <div className="treatments">
-      <img className="services-header" src={lineAqua} />
-
       <section className="treat-section">
+        <h1
+          style={{
+            fontSize: "2rem",
+            textAlign: "center",
+          }}
+        >
+          Methods used in Treatments
+        </h1>
+
         <h1>Core Synchronism</h1>
 
         <p>
@@ -24,7 +29,6 @@ function Treatments(props) {
           ability”
         </p>
         <a href="http://coresynchronism.org/">More Info Here</a>
-        <img src={four} />
       </section>
       <section className="treat-section">
         <h1>Visceral Manipulation</h1>
@@ -57,6 +61,19 @@ function Treatments(props) {
           pain, sciatica, and hip pain.
         </p>
         <img src={pelv} />
+      </section>
+      <section className="treat-section">
+        <h1> Myofascial Release </h1>
+        <p className="text-block">
+          Myofascial release techniques address restrictions in the body's
+          connective tissue matrix. Connective tissue, or fascia, is a network
+          of tissue that connects our muscles, organs, and bones. Thickening of
+          the fascia restricts motion in tissue which can lead to pain and
+          dysfunction. Myofascial release uses a variety of tissue manipulation
+          techniques to promote mobility in the fascia to decrease pain and
+          improve movement.
+        </p>
+        <img src={four} />
       </section>
     </div>
   );
