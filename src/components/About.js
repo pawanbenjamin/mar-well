@@ -2,10 +2,6 @@ import React from "react";
 
 import mariAndKaruna from "../assets/bio-pics/one.jpg";
 import didiMariFam from "../assets/bio-pics/two.jpg";
-import rickyMari from "../assets/bio-pics/three.jpg";
-import mariFam from "../assets/bio-pics/four.jpg";
-
-import bluewave from "../assets/paper-pieces/blue-wave.svg";
 
 import aquaNeg from "../assets/aqua-negative.svg";
 
@@ -52,9 +48,7 @@ function About(props) {
           on the importance of healthcare practitioners recognizing the racial
           and ethic differences when developing treatment plans.
         </p>
-        <div>
-          <img src={mariFam} />
-        </div>
+
         <p>
           Knowing that I wanted to focus my career in pelvic health, I completed
           the course work through the Herman & Wallace Pelvic Rehabilitation

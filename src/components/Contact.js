@@ -39,6 +39,7 @@ function Contact(props) {
       .finally(() => {
         history.push("/");
       });
+    history.push("/");
   };
 
   return (
