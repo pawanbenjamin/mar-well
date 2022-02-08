@@ -4,10 +4,19 @@ import "./home.css";
 
 import fullLogo from "../assets/full-logo.svg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Home(props) {
   return (
     <div className="home">
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="About Marisa" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, Home"
+        />
+      </Helmet>
       <div className="banner">
         <img className="logo" src={fullLogo} />
       </div>

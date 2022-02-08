@@ -6,10 +6,19 @@ import didiMariFam from "../assets/bio-pics/two.jpg";
 import aquaNeg from "../assets/aqua-negative.svg";
 
 import "./about.css";
+import { Helmet } from "react-helmet";
 
 function About(props) {
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="About Marisa" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, about, biography"
+        />
+      </Helmet>
       <img className="services-header" src={aquaNeg} />
       <div className="about-device">
         <h1 className="about-device-header">Marisa (She/ella)</h1>

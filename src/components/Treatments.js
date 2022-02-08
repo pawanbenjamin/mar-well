@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import four from "../assets/treatments/four.jpg";
 import pelv from "../assets/treatments/pelv.jpg";
@@ -9,6 +10,14 @@ import "./treatments.css";
 function Treatments(props) {
   return (
     <div className="treatments">
+      <Helmet>
+        <title>Treatments</title>
+        <meta name="description" content="Mariposa Wellness - Treatments" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, Treatments"
+        />
+      </Helmet>
       <section className="treat-section">
         <h1
           style={{

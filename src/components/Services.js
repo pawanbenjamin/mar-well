@@ -9,10 +9,19 @@ import eight from "../assets/services/eight.jpg";
 import lineAqua from "../assets/aqua-negative.svg";
 
 import "./services.css";
+import { Helmet } from "react-helmet";
 
 function Services(props) {
   return (
     <div className="services">
+      <Helmet>
+        <title>Services</title>
+        <meta name="description" content="Mariposa Wellness - Services" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, services"
+        />
+      </Helmet>
       <img className="services-header" src={lineAqua} />
       <section className="service">
         <h1
