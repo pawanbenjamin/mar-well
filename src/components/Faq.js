@@ -4,12 +4,21 @@ import { Link } from "react-router-dom";
 import "./faq.css";
 
 import lineAqua from "../assets/aqua-negative.svg";
+import { Helmet } from "react-helmet";
 
 function Faq(props) {
   const ref = useRef();
 
   return (
     <div className="FAQ">
+      <Helmet>
+        <title>FAQ</title>
+        <meta name="description" content="About Marisa" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, FAQ"
+        />
+      </Helmet>
       <img className="services-header" src={lineAqua} />
       <h1 className="head">Frequently Asked Questions</h1>
       <hr />

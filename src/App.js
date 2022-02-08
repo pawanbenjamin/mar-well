@@ -2,6 +2,8 @@ import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
+
 import logo from "./assets/aqua-logo.svg";
 
 import {
@@ -19,6 +21,15 @@ function App() {
   return (
     <div className="App">
       {/* <img src={logo} /> */}
+      <Helmet>
+        <title>Mariposa Wellness LLC - Home</title>
+        <meta name="description" content="Pelvic Healthy Physical Therapy" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Router>
         <Nav />
         <Switch>

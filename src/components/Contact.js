@@ -11,6 +11,7 @@ import { init } from "emailjs-com";
 import lineAqua from "../assets/aqua-negative.svg";
 
 import "./contact.css";
+import { Helmet } from "react-helmet";
 
 init(process.env["USER"]);
 
@@ -44,6 +45,14 @@ function Contact(props) {
 
   return (
     <section className="contact">
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Contact Us!" />
+        <meta
+          name="keywords"
+          content="Pelvic, Health, Pelvic Health, Physical Therapy, DC, DMV, contact"
+        />
+      </Helmet>
       <img className="services-header" src={lineAqua} />
       <div className="existing">
         <h2>
